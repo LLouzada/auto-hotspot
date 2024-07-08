@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../widgets/widgets.dart';
+import '../widgets/app_buttons.dart';
+import "dart:core";
 
 class WifiManagerScreen extends StatefulWidget {
   const WifiManagerScreen({super.key});
@@ -27,22 +28,17 @@ class _WifiManagerScreenState extends State<WifiManagerScreen> {
               style: TextStyle(fontSize: 24),
             ),
             const SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                AppMaterialButton(
-                    onPressed: () {
-                      setHotspot(true);
-                    },
-                    text: 'Enable Hotspot'),
-                const SizedBox(width: 16),
-                AppMaterialButton(
-                    onPressed: () {
-                      setHotspot(false);
-                    },
-                    text: 'Disable Hotspot'),
-              ],
-            ),
+            AppElevatedButton(
+                onPressed: () {
+                  setHotspot(true);
+                },
+                text: 'Enable Hotspot'),
+            const SizedBox(width: 16),
+            AppElevatedButton(
+                onPressed: () {
+                  setHotspot(false);
+                },
+                text: 'Disable Hotspot'),
           ],
         ),
       ),
