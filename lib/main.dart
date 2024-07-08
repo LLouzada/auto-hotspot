@@ -1,3 +1,4 @@
+import 'package:auto_hotspot/config/theme/app_theme.dart';
 import 'package:auto_hotspot/views/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,10 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Auto Hotspot',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-        useMaterial3: true,
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       home: const HomeScreen(),
     );
   }

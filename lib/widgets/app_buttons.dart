@@ -1,4 +1,4 @@
-import 'package:auto_hotspot/config/colors.dart';
+import 'package:auto_hotspot/config/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppElevatedButton extends StatelessWidget {

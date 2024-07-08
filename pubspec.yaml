@@ -79,7 +79,7 @@ flutter:
   fonts:
     - family: FireSans
       fonts:
-        - asset: asses/fonts/Fire-Sans-Medium.ttf
+        - asset: assets/fonts/Fira-Sans-Medium.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
